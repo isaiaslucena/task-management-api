@@ -4,7 +4,7 @@ import { TaskStatus } from "./task-status.enum";
 import { Task } from "./task.entity";
 import { Like } from 'typeorm';
 import { GetTasksFilterDto } from "./dto/get-tasks-filter.do";
-import { User } from "src/auth/user.entity";
+import { User } from "../auth/user.entity";
 
 @EntityRepository(Task)
 export class TaskRepository extends Repository<Task> {
